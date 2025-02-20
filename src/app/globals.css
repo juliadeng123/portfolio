@@ -7,11 +7,12 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  margin: 0.5em 1em;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--white);
+  background: var(--black);
   font-family: PromptRegular, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,7 +30,6 @@ a {
 }
 
 :root {
-  --roboto: 'Roboto', sans-serif;
   --black: #000000;
   --white: #ffffff;
   --blue: #273582;
@@ -43,4 +43,16 @@ a {
   src: url('/assets/fonts/Prompt-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+header, header ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  list-style-type: none;
+  gap: 2em
 }
