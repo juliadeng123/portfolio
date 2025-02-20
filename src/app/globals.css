@@ -1,13 +1,6 @@
 :root {
-  --background: 000000;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: var(--black);
+  --foreground: var(--white);
 }
 
 html,
@@ -19,7 +12,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: PromptRegular, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,8 +28,19 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+:root {
+  --roboto: 'Roboto', sans-serif;
+  --black: #000000;
+  --white: #ffffff;
+  --blue: #273582;
+  --red: #9F2125;
+  --grey: #D9D9D9;
+  --dark-grey: #303030;
+}
+
+@font-face {
+  font-family: "PromptRegular";
+  src: url('/assets/fonts/Prompt-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
