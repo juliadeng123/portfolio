@@ -9,8 +9,7 @@ export default async function Footer() {
                 src="/assets/images/logo-white.png"
                 width={125}
                 height={125}
-                alt="White Logo">
-                </Image>
+                alt="White Logo" />
             </Link>
             <div>
                 <h2>Find me here</h2>
@@ -20,16 +19,14 @@ export default async function Footer() {
                     src="/assets/images/mail.png"
                     width={55}
                     height={50}
-                    alt="Mail Icon">
-                    </Image>
+                    alt="Mail Icon" />
                 </a>
                 <a href="https://www.linkedin.com/in/julia-deng-0123/">
                     <Image 
                     src="/assets/images/linkedin.png"
                     width={38}
                     height={34}
-                    alt="LinkedIn Icon">
-                    </Image>
+                    alt="LinkedIn Icon" />
                 </a>
                 </div>
             </div>

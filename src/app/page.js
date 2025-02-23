@@ -5,6 +5,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>Under Construction :D</h1>
+        <p>temp</p>
       </main>
     </div>
   );
