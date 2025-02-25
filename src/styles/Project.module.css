@@ -5,12 +5,16 @@
 
 .header {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1em;
 }
 
 .headerText {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	gap: 1.5em;
+	justify-content: space-between;
 }
 
 .headerTopText {
@@ -18,10 +22,10 @@
 	font-size: 30px;
 }
 
-.image {
-	max-width: 15em;
+.scorathImage {
+	padding: 1em;
+	width: 80vw;
 	height: auto;
-	margin-left: 5em;
 }
 
 .paragraphBlock {
@@ -37,12 +41,18 @@
 	font-size: 20px;
 }
 
+.image {
+	width: 80vw;
+	height: auto;
+}
+
 .imageBlock {
 	padding: 1em;
 }
 
 .imagesScorath {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 1em;
@@ -59,6 +69,52 @@
 }
 
 .software {
-	margin-top: 3em;
+	margin-top: 2em;
 	margin-bottom: 1em;
+}
+
+/* Tablet*/
+@media (min-width: 768px) {
+	.header {
+		flex-direction: row;
+	}
+
+	.scorathImage {
+		padding: 1em;
+		width: 40vw;
+		height: auto;
+	}
+
+	.imagesScorath {
+		flex-direction: row;
+	}
+
+	.image {
+		width: 20vw;
+		height: auto;
+	}
+
+	.imageWide {
+		width: 80vw;
+		height: auto;
+	}
+
+	.imageSquare {
+		width: 35vw;
+		height: auto;
+	}
+}
+
+/* Desktop*/
+@media (min-width: 1024px) {
+	.scorathImage {
+		width: 20vw;
+		height: auto;
+		margin-left: 5em;
+	}
+
+	.imageWide {
+		width: 60vw;
+		height: auto;
+	}
 }

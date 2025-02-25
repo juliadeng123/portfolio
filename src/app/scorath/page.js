@@ -25,10 +25,10 @@ export default function Scorath() {
 				<img
 					src="/assets/images/home-scorath.png"
 					alt="The Scorath Image"
-					className={styles.image}
+					className={styles.scorathImage}
 					layout="responsive"
-					width={300}
-					height={400}
+					width={200}
+					height={300}
 				/>
 			</div>
 			<div>
@@ -46,6 +46,7 @@ export default function Scorath() {
 						<img
 							src="/assets/images/scorath/rat.png"
 							alt="Rat Image"
+							className={styles.image}
 							width="356"
 							height="288"
 						/>
@@ -58,18 +59,20 @@ export default function Scorath() {
 						<img
 							src="/assets/images/scorath/scorpion.png"
 							alt="Scorpion Image"
+							className={styles.image}
 							width="305"
 							height="288"
 						/>
 						<img
 							src="/assets/images/plusSign.png"
-							alt="Rat Image"
+							alt="Plus Sign"
 							width="39"
 							height="39"
 						/>
 						<img
 							src="/assets/images/scorath/moth.png"
 							alt="Moth Image"
+							className={styles.image}
 							width="356"
 							height="288"
 						/>
@@ -84,6 +87,7 @@ export default function Scorath() {
 						<img
 							src="/assets/images/scorath/scorath.png"
 							alt="Scorath Image"
+							className={`${styles.image} ${styles.imageWide}`}
 							width="1120"
 							height="376"
 						/>
@@ -97,6 +101,7 @@ export default function Scorath() {
 					<img
 						src="/assets/images/scorath/background.png"
 						alt="Background Image"
+						className={`${styles.image} ${styles.imageSquare}`}
 						width="499"
 						height="375"
 					/>
@@ -109,6 +114,7 @@ export default function Scorath() {
 					<img
 						src="/assets/images/scorath/stone.png"
 						alt="Stone Image"
+						className={`${styles.image} ${styles.imageSquare}`}
 						width="499"
 						height="375"
 					/>
@@ -121,6 +127,7 @@ export default function Scorath() {
 					<img
 						src="/assets/images/scorath/scorath-title.png"
 						alt="Scorath Title"
+						className={`${styles.image} ${styles.imageWide}`}
 						width="1000"
 						height="220"
 					/>
