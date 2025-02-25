@@ -41,10 +41,10 @@ export default async function Footer() {
 					<Link href={"/"}>Home</Link>
 				</li>
 				<li>
-					<Link href={"/Project"}>Projects</Link>
+					<Link href={"/project"}>Projects</Link>
 				</li>
 				<li>
-					<Link href={"/Contact"}>Contact</Link>
+					<Link href={"/contact"}>Contact</Link>
 				</li>
 			</ul>
 		</footer>
