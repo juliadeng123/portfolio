@@ -1,0 +1,64 @@
+.title {
+	font-size: 70px;
+	text-align: center;
+}
+
+.header {
+	display: flex;
+}
+
+.headerText {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.headerTopText {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.image {
+	max-width: 15em;
+	height: auto;
+	margin-left: 5em;
+}
+
+.paragraphBlock {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.paragraphTitle {
+	padding-top: 0.5em;
+}
+
+.paragraphText {
+	font-size: 20px;
+}
+
+.imageBlock {
+	padding: 1em;
+}
+
+.imagesScorath {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	gap: 1em;
+}
+
+.scorath {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	gap: 1em;
+}
+
+.software {
+	margin-top: 3em;
+	margin-bottom: 1em;
+}
