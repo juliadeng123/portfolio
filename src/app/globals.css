@@ -5,6 +5,7 @@
 	--red: #9f2125;
 	--grey: #d9d9d9;
 	--dark-grey: #303030;
+	--darker-grey: #151515;
 }
 
 html,
@@ -116,7 +117,7 @@ footer li {
 @media (min-width: 768px) {
 	html,
 	body {
-		margin: 1em 2em 0.5em 2em;
+		margin: 1em 3em 0.5em 3em;
 	}
 
 	/*footer*/
@@ -163,9 +164,4 @@ footer li {
 		background-color: var(--grey);
 		color: var(--black);
 	}
-}
-
-/*temp*/
-p {
-	height: 30em;
 }
