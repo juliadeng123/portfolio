@@ -1,6 +1,5 @@
 import styles from "@/styles/Project.module.css";
 import ParagraphBlock from "@/components/ParagraphBlock";
-import Image from "next/image";
 
 export default function Scorath() {
 	return (
@@ -23,7 +22,7 @@ export default function Scorath() {
 						</p>
 					</div>
 				</div>
-				<Image
+				<img
 					src="/assets/images/home-scorath.png"
 					alt="The Scorath Image"
 					className={styles.image}
