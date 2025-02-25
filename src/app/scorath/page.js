@@ -1,5 +1,5 @@
 import styles from "@/styles/Project.module.css";
-import ParagraphBlock from "@/components/molecules/ParagraphBlock";
+import ParagraphBlock from "@/components/ParagraphBlock";
 import Image from "next/image";
 
 export default function Scorath() {
