@@ -10,6 +10,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
+			<head>
+				<link
+					rel="icon"
+					href="assets/images/logo-black.png"
+					type="image/png"
+					sizes="32x32"
+				/>
+			</head>
 			<body>
 				<div>
 					<Header />
