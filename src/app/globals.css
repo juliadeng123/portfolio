@@ -91,6 +91,10 @@ footer ul {
 	margin-top: 0.5em;
 }
 
+footer a {
+	padding: 0.75em;
+}
+
 footer li {
 	line-height: 2em;
 	padding: 0.75em;
@@ -107,7 +111,7 @@ footer li {
 	justify-content: space-between;
 }
 
-.footer-links li:active,
+.footer-links a:active,
 .footer-icons a:active {
 	background-color: var(--dark-grey);
 	border-radius: 1em;
@@ -149,18 +153,17 @@ footer li {
 	}
 
 	.footer-li {
-		padding: 1em;
 		text-align: center;
 	}
 
 	.footer-icons a:hover,
-	.footer-links li:hover {
+	.footer-links a:hover {
 		background-color: var(--dark-grey);
 		border-radius: 1em;
 	}
 
 	.footer-icons a:active,
-	.footer-links li:active {
+	.footer-links a:active {
 		background-color: var(--grey);
 		color: var(--black);
 	}

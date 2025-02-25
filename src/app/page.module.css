@@ -33,7 +33,7 @@
 
 .filterButton {
 	padding: 0.5em 1em;
-	border: 2px solid var(--red);
+	border: 3px solid var(--red);
 	border-radius: 5px;
 	background-color: var(--darker-grey);
 	color: white;
@@ -47,6 +47,7 @@
 
 .active {
 	background-color: var(--red);
+	font-weight: bold;
 }
 
 .projectList {
