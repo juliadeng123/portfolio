@@ -1,6 +1,11 @@
 import styles from "@/styles/Project.module.css";
 import ParagraphBlock from "@/components/ParagraphBlock";
 
+export const metadata = {
+	title: "The Scorath",
+	description: "Magazine advertisement for a custom creature",
+};
+
 export default function Scorath() {
 	return (
 		<div>

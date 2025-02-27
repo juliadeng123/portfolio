@@ -3,6 +3,11 @@ import ParagraphBlock from "@/components/ParagraphBlock";
 import ButtonLink from "@/components/ButtonLink";
 import Carousel from "@/components/Carousel";
 
+export const metadata = {
+	title: "CalmQuest",
+	description: "A mental wellness web app for self-reflection",
+};
+
 export default function Calmquest() {
 	const carouselImages = [
 		{

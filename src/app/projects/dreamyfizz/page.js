@@ -1,6 +1,11 @@
 import styles from "@/styles/Project.module.css";
 import ParagraphBlock from "@/components/ParagraphBlock";
 
+export const metadata = {
+	title: "Dreamy Fizz",
+	description: "Product label design for sparkling water",
+};
+
 export default function Dreamyfizz() {
 	return (
 		<div>

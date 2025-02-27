@@ -3,6 +3,11 @@ import ParagraphBlock from "@/components/ParagraphBlock";
 import ButtonLink from "@/components/ButtonLink";
 import Carousel from "@/components/Carousel";
 
+export const metadata = {
+	title: "GoldiBite",
+	description: "Food safety app for travelers with allergies",
+};
+
 export default function Goldibite() {
 	const carouselImages = [
 		{
