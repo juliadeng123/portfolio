@@ -53,7 +53,9 @@ export default function Header() {
 						<Link href={"/"}>Home</Link>
 					</li>
 					<li>
-						<Link href={"/project"}>Projects</Link>
+						<Link href={"/#projects"} scroll={true}>
+							Projects
+						</Link>
 					</li>
 					<li>
 						<Link href={"/contact"}>Contact</Link>
@@ -67,7 +69,9 @@ export default function Header() {
 					<Link href={"/"}>Home</Link>
 				</li>
 				<li>
-					<Link href={"/project"}>Projects</Link>
+					<Link href={"/#projects"} scroll={true}>
+						Projects
+					</Link>
 				</li>
 				<li>
 					<Link href={"/contact"}>Contact</Link>
