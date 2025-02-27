@@ -8,7 +8,7 @@ export default function Home() {
 		{
 			id: 1,
 			title: "GoldiBite",
-			page: "Goldibite",
+			page: "goldibite",
 			category: ["UI/UX"],
 			description:
 				"Food safety app for travelers with food allergies or sensitivities",
@@ -19,7 +19,7 @@ export default function Home() {
 		{
 			id: 2,
 			title: "CalmQuest",
-			page: "Calmquest",
+			page: "calmquest",
 			category: ["UI/UX"],
 			description:
 				"A mental wellness web app where users can self-reflect about their day",
@@ -30,7 +30,7 @@ export default function Home() {
 		{
 			id: 3,
 			title: "The Scorath",
-			page: "Scorath",
+			page: "scorath",
 			category: ["Graphic"],
 			description:
 				"Magazine advertisement for a unique custom creature made from a rat, scorpion, and moth",
@@ -41,7 +41,7 @@ export default function Home() {
 		{
 			id: 4,
 			title: "Dreamy Fizz",
-			page: "Dreamyfizz",
+			page: "dreamyfizz",
 			category: ["Graphic"],
 			description:
 				"Product label design for canned sparkling water with 3 different flavours",
@@ -89,7 +89,10 @@ export default function Home() {
 					</div>
 					<div className={styles.projectList}>
 						{filteredProjects.map((project) => (
-							<Link href={`/${project.page}`} key={project.id}>
+							<Link
+								href={`/pages/${project.page}`}
+								key={project.id}
+							>
 								<div className={styles.projectCard}>
 									<img
 										src={project.image}
