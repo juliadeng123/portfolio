@@ -90,7 +90,7 @@ export default function Home() {
 					<div className={styles.projectList}>
 						{filteredProjects.map((project) => (
 							<Link
-								href={`/pages/${project.page}`}
+								href={`/projects/${project.page}`}
 								key={project.id}
 							>
 								<div className={styles.projectCard}>
