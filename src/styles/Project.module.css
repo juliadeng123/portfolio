@@ -1,11 +1,14 @@
 .title {
-	font-size: 70px;
+	font-size: 60px;
 	text-align: center;
+	line-height: 1em;
+	margin-bottom: 0.1em;
+	margin-top: 0.5em;
 }
 
 .header {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	align-items: center;
 	margin-bottom: 1em;
 }
@@ -14,7 +17,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1.5em;
-	justify-content: space-between;
 }
 
 .headerTopText {
@@ -22,26 +24,43 @@
 	font-size: 30px;
 }
 
-.scorathImage {
+.headerRight {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5em;
 	padding: 1em;
 	width: 80vw;
 	height: auto;
 }
 
+.h2 {
+	font-size: 2em;
+	margin-bottom: 0;
+}
+
+.paragraphBlock:empty,
+.paragraphTitle:empty,
+.paragraphText:empty {
+	display: none;
+}
+
 .paragraphBlock {
-	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
 
-.paragraphTitle {
-	padding-top: 0.5em;
+.paragraphTitle,
+.headerH2 {
+	font-size: 1.5em;
 }
 
 .paragraphText {
-	font-size: 20px;
+	font-size: 1.25em;
+	padding-bottom: 0.75em;
 }
 
-.image {
+.image,
+.persona {
 	width: 80vw;
 	height: auto;
 }
@@ -50,16 +69,8 @@
 	padding: 1em;
 }
 
-.imagesScorath {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 1em;
-	gap: 1em;
-}
-
-.scorath {
+.imagesDisplay,
+.imagesDisplayCol {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -69,28 +80,64 @@
 }
 
 .software {
-	margin-top: 2em;
-	margin-bottom: 1em;
+	font-size: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 3em;
+}
+
+.orderedList {
+	margin-left: 1.75em;
+}
+
+.orderedList li::marker {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.rightArrow {
+	transform: rotate(90deg);
 }
 
 /* Tablet*/
 @media (min-width: 768px) {
-	.header {
+	.title {
+		font-size: 70px;
+		line-height: 1.5em;
+		margin-bottom: 0em;
+		margin-top: 0em;
+	}
+	.h2 {
+		font-size: 2.5em;
+	}
+
+	.paragraphTitle,
+	.headerH2 {
+		font-size: 2em;
+	}
+
+	.paragraphText,
+	.orderedList li::marker {
+		font-size: 1.5em;
+	}
+
+	.header,
+	.imagesDisplay {
 		flex-direction: row;
 	}
 
-	.scorathImage {
+	.headerRight {
 		padding: 1em;
 		width: 40vw;
 		height: auto;
 	}
 
-	.imagesScorath {
-		flex-direction: row;
-	}
-
 	.image {
 		width: 20vw;
+		height: auto;
+	}
+
+	.persona {
+		width: 35vw;
 		height: auto;
 	}
 
@@ -103,14 +150,35 @@
 		width: 35vw;
 		height: auto;
 	}
+
+	.software {
+		font-size: 1.5em;
+		margin-bottom: 1em;
+	}
+
+	.rightArrow {
+		transform: rotate(0deg);
+	}
 }
 
 /* Desktop*/
 @media (min-width: 1024px) {
-	.scorathImage {
+	.headerText {
+		justify-content: space-between;
+	}
+
+	.headerRight {
 		width: 20vw;
 		height: auto;
-		margin-left: 5em;
+		margin-left: 4em;
+	}
+
+	.h2 {
+		font-size: 3em;
+	}
+
+	.paragraphText {
+		font-size: 1.75em;
 	}
 
 	.imageWide {

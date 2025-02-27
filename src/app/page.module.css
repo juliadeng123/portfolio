@@ -75,7 +75,7 @@
 }
 
 .projectCard:active {
-	background-color: var(--dark-grey);
+	background-color: var(--dark-blue);
 }
 
 .projectTitle {
@@ -122,6 +122,12 @@
 @media (min-width: 1024px) {
 	.name {
 		font-size: 4em;
+	}
+
+	.filterButton {
+		width: auto;
+		padding: 0.75em;
+		font-size: 1.5em;
 	}
 
 	.jobTitle {

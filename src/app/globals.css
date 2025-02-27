@@ -1,8 +1,12 @@
 :root {
 	--black: #000000;
 	--white: #ffffff;
+	--light-blue: #3347b8;
 	--blue: #273582;
+	--dark-blue: #1c2761;
+	--bright-red: #cf2228;
 	--red: #9f2125;
+	--dark-red: #6a1618;
 	--grey: #d9d9d9;
 	--dark-grey: #303030;
 	--darker-grey: #151515;
@@ -16,7 +20,7 @@ html,
 body {
 	max-width: 100vw;
 	margin: 0.5em 1em 1em 1em;
-	scrollbar-color: var(--black) var(--blue);
+	scrollbar-color: var(--bright-red) var(--dark-grey);
 }
 
 body {
@@ -64,7 +68,8 @@ footer ul {
 /*Footer*/
 footer {
 	flex-wrap: wrap;
-	margin-top: 2%;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 footer h2 {
@@ -129,6 +134,11 @@ footer li {
 		margin: 1em 2em 0.5em 2em;
 	}
 
+	li a,
+	p {
+		font-size: 1.5rem;
+	}
+
 	/*footer*/
 	footer {
 		flex-wrap: nowrap;
@@ -137,12 +147,24 @@ footer li {
 
 	footer h2 {
 		font-weight: 100;
-		font-size: x-large;
+		font-size: 2rem;
+	}
+
+	footer ul {
+		margin-top: 0em;
+	}
+
+	footer li a {
+		font-size: 1.25em;
 	}
 
 	.footer-image-logo {
 		width: 125px;
 		height: 125px;
+	}
+
+	.footer-image a {
+		padding: 0;
 	}
 
 	.footer-image,
@@ -155,6 +177,7 @@ footer li {
 		flex-direction: column;
 		flex-basis: 0%;
 		justify-content: space-between;
+		gap: 1.5em;
 	}
 
 	.footer-li {

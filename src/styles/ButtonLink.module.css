@@ -1,0 +1,22 @@
+.button {
+	background-color: var(--red);
+	color: var(--white);
+	border: none;
+	border-radius: 5px;
+	padding: 0.75em 1.25em;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	margin: 0em;
+	margin-bottom: 1em;
+}
+
+.button:hover {
+	background-color: var(--bright-red);
+	text-decoration: underline;
+}
+
+.button:active {
+	background-color: var(--dark-red);
+}

@@ -12,7 +12,7 @@ export default function Scorath() {
 						scorpion.
 					</p>
 					<div>
-						<h2>Project Overview</h2>
+						<h2 className={styles.headerH2}>Project Overview</h2>
 						<p className={styles.paragraphText}>
 							The Scorath is shown with this magazine
 							advertisement for a tv documented series. It
@@ -22,17 +22,19 @@ export default function Scorath() {
 						</p>
 					</div>
 				</div>
-				<img
-					src="/assets/images/home-scorath.png"
-					alt="The Scorath Image"
-					className={styles.scorathImage}
-					layout="responsive"
-					width={200}
-					height={300}
-				/>
+				<div className={styles.headerRight}>
+					<img
+						src="/assets/images/home-scorath.png"
+						alt="The Scorath Image"
+						className={styles.headerImage}
+						layout="responsive"
+						width={200}
+						height={300}
+					/>
+				</div>
 			</div>
 			<div>
-				<h2>Concept Design (2 weeks)</h2>
+				<h2 className={styles.h2}>Concept Design (2 weeks)</h2>
 				<ParagraphBlock
 					title="Brainstorming"
 					text="The first week was dedicated to brainstorming which three creatures to combine. The idea was to pick one land, one sea, and one flying creature."
@@ -42,7 +44,7 @@ export default function Scorath() {
 					text={`Unique parts from three different creatures were chosen to create The Scorath. The Scorath combines a rat's body, a scorpion's tail, and moth wings, resulting in a truly distinct and imaginative creature. The name "Scorath" was formed by merging parts of the scorpion, rat, and moth names into something new and intriguing.`}
 				/>
 				<div className={styles.imageBlock}>
-					<div className={styles.imagesScorath}>
+					<div className={styles.imagesDisplay}>
 						<img
 							src="/assets/images/scorath/rat.png"
 							alt="Rat Image"
@@ -77,13 +79,14 @@ export default function Scorath() {
 							height="288"
 						/>
 					</div>
-					<div className={styles.scorath}>
+					<div className={styles.imagesDisplayCol}>
 						<img
 							src="/assets/images/equalSign.png"
 							alt="Equal Sign"
 							width="39"
 							height="40"
 						/>
+						<p></p>
 						<img
 							src="/assets/images/scorath/scorath.png"
 							alt="Scorath Image"
@@ -97,7 +100,7 @@ export default function Scorath() {
 					title="Environment Creation"
 					text={`A rocky mountainous area was chosen to reflect the harsh and unforgiving environment The Scorath inhabits. To depict this, an image of rocks and mountains was combined to create the background.`}
 				/>
-				<div className={`${styles.imagesScorath} ${styles.imageBlock}`}>
+				<div className={`${styles.imagesDisplay} ${styles.imageBlock}`}>
 					<img
 						src="/assets/images/scorath/background.png"
 						alt="Background Image"
@@ -123,7 +126,7 @@ export default function Scorath() {
 					title="Title Design"
 					text={`To grab attention and highlight the Scorath’s importance and danger, the title was designed to look strong and bold. It was further emphasized with red as the font color to evoke a sense of danger and power. `}
 				/>
-				<div className={`${styles.imagesScorath} ${styles.imageBlock}`}>
+				<div className={`${styles.imagesDisplay} ${styles.imageBlock}`}>
 					<img
 						src="/assets/images/scorath/scorath-title.png"
 						alt="Scorath Title"
@@ -132,7 +135,7 @@ export default function Scorath() {
 						height="220"
 					/>
 				</div>
-				<h2>Refining & Finalizing the Design</h2>
+				<h2 className={styles.h2}>Refining & Finalizing the Design</h2>
 				<ParagraphBlock
 					title="Fine-Tuning"
 					text={`In the second week, the focus was on fine-tuning the creature, adjusting its placement and appearance to fit better within its environment.`}
