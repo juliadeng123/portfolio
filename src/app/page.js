@@ -71,55 +71,53 @@ export default function Home() {
 						UI/UX and Graphic Designer
 					</h2>
 				</div>
-				<section id="projects">
-					<div className={styles.container}>
-						<div className={styles.filterGroup}>
-							{filters.map((filter) => (
-								<button
-									key={filter}
-									className={`${styles.filterButton} ${
-										selectedFilter === filter
-											? styles.active
-											: ""
-									}`}
-									onClick={() => setSelectedFilter(filter)}
-								>
-									{filter}
-								</button>
-							))}
-						</div>
-						<div className={styles.projectList}>
-							{filteredProjects.map((project) => (
-								<Link
-									href={`/projects/${project.page}`}
-									key={project.id}
-								>
-									<div className={styles.projectCard}>
-										<img
-											src={project.image}
-											alt={project.title}
-											className={styles.projectImage}
-											width={project.imageWidth}
-											height={project.imageHeight}
-										/>
-										<div className={styles.projectText}>
-											<h3 className={styles.projectTitle}>
-												{project.title}
-											</h3>
-											<p
-												className={
-													styles.projectDescription
-												}
-											>
-												{project.description}
-											</p>
-										</div>
-									</div>
-								</Link>
-							))}
-						</div>
+				<div className={styles.container} id="projects">
+					<div className={styles.filterGroup}>
+						{filters.map((filter) => (
+							<button
+								key={filter}
+								className={`${styles.filterButton} ${
+									selectedFilter === filter
+										? styles.active
+										: ""
+								}`}
+								onClick={() => setSelectedFilter(filter)}
+							>
+								{filter}
+							</button>
+						))}
 					</div>
-				</section>
+					<div className={styles.projectList}>
+						{filteredProjects.map((project) => (
+							<Link
+								href={`/projects/${project.page}`}
+								key={project.id}
+							>
+								<div className={styles.projectCard}>
+									<img
+										src={project.image}
+										alt={project.title}
+										className={styles.projectImage}
+										width={project.imageWidth}
+										height={project.imageHeight}
+									/>
+									<div className={styles.projectText}>
+										<h3 className={styles.projectTitle}>
+											{project.title}
+										</h3>
+										<p
+											className={
+												styles.projectDescription
+											}
+										>
+											{project.description}
+										</p>
+									</div>
+								</div>
+							</Link>
+						))}
+					</div>
+				</div>
 			</main>
 		</div>
 	);
