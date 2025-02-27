@@ -43,12 +43,12 @@ export default function Calmquest() {
 		{
 			label: "Meditation",
 			src: "/assets/images/calmquest/screens/07-meditation.png",
-			alt: "Meditation",
+			alt: "Meditation Exercises",
 		},
 		{
 			label: "Mindfulness",
 			src: "/assets/images/calmquest/screens/08-mindfulness.png",
-			alt: "Mindfulness",
+			alt: "Mindfulness Exercises",
 		},
 		{
 			label: "Exercises",
