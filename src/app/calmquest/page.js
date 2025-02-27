@@ -86,7 +86,7 @@ export default function Calmquest() {
 						about their day.
 					</p>
 					<div>
-						<h2 className={styles.headerH2}> Project Overview</h2>
+						<h2 className={styles.headerH2}>Project Overview</h2>
 						<p className={styles.paragraphText}>
 							CalmQuest is a mental wellness web app where users
 							can complete daily check-ins, and mindfulness and

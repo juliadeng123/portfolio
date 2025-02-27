@@ -36,7 +36,7 @@ export default function Goldibite() {
 						sensitivities.
 					</p>
 					<div>
-						<h2 className={styles.headerH2}> Project Overview</h2>
+						<h2 className={styles.headerH2}>Project Overview</h2>
 						<p className={styles.paragraphText}>
 							GoldiBite is a mobile application designed to
 							enhance user safety by providing quick and reliable

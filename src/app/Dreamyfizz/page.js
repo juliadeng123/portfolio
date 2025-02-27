@@ -12,7 +12,7 @@ export default function Dreamyfizz() {
 						Blueberry, Strawberry, and Lime.
 					</p>
 					<div>
-						<h2 className={styles.headerH2}> Project Overview</h2>
+						<h2 className={styles.headerH2}>Project Overview</h2>
 						<p className={styles.paragraphText}>
 							Dreamy Fizz is canned sparkling water made with 100%
 							natural flavors and contains zero sugar. The
