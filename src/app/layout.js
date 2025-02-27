@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
 			<head>
 				<link
 					rel="icon"
-					href="assets/images/logo-black.png"
+					href="assets/images/logo-white.png"
 					type="image/png"
 					sizes="32x32"
 				/>
