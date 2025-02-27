@@ -1,17 +1,33 @@
-.main {
+.main,
+.mainLeft {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	margin-bottom: 2em;
 }
 
-.intro {
+.main {
+	align-items: center;
+}
+
+.mainLeft {
+	align-items: left;
+	margin-bottom: 5em;
+}
+
+.intro,
+.contact {
 	text-align: center;
 }
 
-.jobTitle {
+.jobTitle,
+.contactInfo {
 	font-size: 1em;
 	font-weight: 100;
+}
+
+.contactInfo {
+	display: flex;
+	flex-direction: column;
 }
 
 .button {
@@ -120,11 +136,16 @@
 		padding: 0.75em;
 		font-size: 1em;
 	}
+
+	.mainLeft {
+		margin-bottom: 10em;
+	}
 }
 
 /* Desktop*/
 @media (min-width: 1024px) {
-	.name {
+	.name,
+	.contact {
 		font-size: 4em;
 	}
 
@@ -134,8 +155,10 @@
 		font-size: 1.5em;
 	}
 
-	.jobTitle {
-		font-size: 2.5em;
+	.jobTitle,
+	.contactInfo {
+		font-size: 2em;
+		margin-bottom: 1em;
 	}
 
 	.projectDescription {

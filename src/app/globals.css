@@ -52,8 +52,7 @@ a {
 /*Header*/
 header,
 header ul,
-footer,
-.footer-icons {
+footer {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -89,8 +88,9 @@ footer h2 {
 }
 
 .footer-icons {
-	justify-content: center;
-	align-items: center;
+	display: flex;
+	flex-direction: row;
+	align-items: left;
 }
 
 .footer-icons a {
@@ -125,6 +125,18 @@ footer li {
 .footer-icons a:active {
 	background-color: var(--dark-grey);
 	border-radius: 1em;
+}
+
+.contact-col {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25em;
+}
+
+.contact-links a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 /* Tablet and Desktop*/
@@ -187,7 +199,7 @@ footer li {
 	.footer-icons a:hover,
 	.footer-links a:hover {
 		background-color: var(--dark-grey);
-		border-radius: 1em;
+		border-radius: 0.5em;
 	}
 
 	.footer-icons a:active,
