@@ -324,7 +324,7 @@ export default function Goldibite() {
 				/>
 				<div className={styles.software}>
 					<h3>Software Used</h3>
-					<p>Figma, Expo, GitHub</p>
+					<p className={styles.paragraphText}>Figma, Expo, GitHub</p>
 				</div>
 			</div>
 		</div>

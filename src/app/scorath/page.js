@@ -146,7 +146,9 @@ export default function Scorath() {
 				/>
 				<div className={styles.software}>
 					<h3>Software Used</h3>
-					<p>Adobe Photoshop, Adobe Illustrator</p>
+					<p className={styles.paragraphText}>
+						Adobe Photoshop, Adobe Illustrator
+					</p>
 				</div>
 			</div>
 		</div>

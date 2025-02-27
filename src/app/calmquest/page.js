@@ -41,19 +41,19 @@ export default function Calmquest() {
 			alt: "Quiz",
 		},
 		{
-			label: "Meditation Exercise",
+			label: "Meditation",
 			src: "/assets/images/calmquest/screens/07-meditation.png",
-			alt: "Meditation Exercise",
+			alt: "Meditation",
 		},
 		{
-			label: "Mindfulness Exercise",
+			label: "Mindfulness",
 			src: "/assets/images/calmquest/screens/08-mindfulness.png",
-			alt: "Mindfulness Exercise",
+			alt: "Mindfulness",
 		},
 		{
-			label: "Breathing Exercises",
+			label: "Exercises",
 			src: "/assets/images/calmquest/screens/09-breath.png",
-			alt: "Breathing Exercises",
+			alt: "Exercises",
 		},
 		{
 			label: "Exercise Home",
@@ -171,7 +171,9 @@ export default function Calmquest() {
 
 				<div className={styles.software}>
 					<h3>Software Used</h3>
-					<p>Figma, Adobe Illustrator, Next.js, GitHub, Vercel</p>
+					<p className={styles.paragraphText}>
+						Figma, Adobe Illustrator, Next.js, GitHub, Vercel
+					</p>
 				</div>
 			</div>
 		</div>
