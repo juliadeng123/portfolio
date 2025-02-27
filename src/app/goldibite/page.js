@@ -68,7 +68,9 @@ export default function Goldibite() {
 				<ParagraphBlock
 					text={
 						<>
-							<strong>Seamless Accessibility & Usability:</strong>
+							<strong>
+								Seamless Accessibility & Usability:{" "}
+							</strong>
 							Designed for everyone, with simple onboarding, clear
 							navigation, and a clean layout, making it easy to
 							find important information quickly.
@@ -79,7 +81,7 @@ export default function Goldibite() {
 					text={
 						<>
 							<strong>
-								Travel Assistance for Allergy-Safe Experiences:
+								Travel Assistance for Allergy-Safe Experiences:{" "}
 							</strong>
 							Helps users stay safe while traveling with allergen
 							translations, guides, tips, and a menu and product
