@@ -106,13 +106,14 @@
 		margin-bottom: 0em;
 		margin-top: 0em;
 	}
+
 	.h2 {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 
 	.paragraphTitle,
 	.headerH2 {
-		font-size: 2em;
+		font-size: 1.75em;
 	}
 
 	.paragraphText,
@@ -174,7 +175,17 @@
 	}
 
 	.h2 {
-		font-size: 3em;
+		font-size: 2.25em;
+	}
+
+	.paragraphTitle,
+	.headerH2 {
+		font-size: 1.5em;
+	}
+
+	.paragraphText,
+	.orderedList li::marker {
+		font-size: 1.25em;
 	}
 
 	.imageWide {

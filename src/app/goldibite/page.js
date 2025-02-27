@@ -180,7 +180,7 @@ export default function Goldibite() {
 				/>
 				<div className={`${styles.imagesDisplay}`}>
 					<div>
-						<p className={styles.paragraphText}>Scanner</p>
+						<p className={styles.paragraphTitle}>Scanner</p>
 						<img
 							src="/assets/images/goldibite/scanner.png"
 							alt="Scanner Screen"
@@ -197,7 +197,7 @@ export default function Goldibite() {
 						height="84"
 					/>
 					<div>
-						<p className={styles.paragraphText}>Scan Results</p>
+						<p className={styles.paragraphTitle}>Scan Results</p>
 						<img
 							src="/assets/images/goldibite/scan-result.png"
 							alt="Scan Result Screen"
@@ -218,7 +218,7 @@ export default function Goldibite() {
 				/>
 				<div className={`${styles.imagesDisplay}`}>
 					<div>
-						<p className={styles.paragraphText}>Settings</p>
+						<p className={styles.paragraphTitle}>Settings</p>
 						<img
 							src="/assets/images/goldibite/settings.png"
 							alt="Settings Screen"
@@ -228,7 +228,7 @@ export default function Goldibite() {
 						/>
 					</div>
 					<div>
-						<p className={styles.paragraphText}>Emergency</p>
+						<p className={styles.paragraphTitle}>Emergency</p>
 						<img
 							src="/assets/images/goldibite/emergency.png"
 							alt="Emergency Screen"
@@ -238,7 +238,7 @@ export default function Goldibite() {
 						/>
 					</div>
 					<div>
-						<p className={styles.paragraphText}>Menu Results</p>
+						<p className={styles.paragraphTitle}>Menu Results</p>
 						<img
 							src="/assets/images/goldibite/menu-result.png"
 							alt="Menu Result Screen"
@@ -259,7 +259,7 @@ export default function Goldibite() {
 				/>
 				<div className={`${styles.imagesDisplay}`}>
 					<div>
-						<p className={styles.paragraphText}>Claire</p>
+						<p className={styles.paragraphTitle}>Claire</p>
 						<img
 							src="/assets/images/goldibite/claire-1.png"
 							alt="Claire Persona Part 1"
@@ -278,7 +278,7 @@ export default function Goldibite() {
 				</div>
 				<div className={`${styles.imagesDisplay}`}>
 					<div>
-						<p className={styles.paragraphText}>Jackson</p>
+						<p className={styles.paragraphTitle}>Jackson</p>
 						<img
 							src="/assets/images/goldibite/jackson-1.png"
 							alt="Jackson Persona Part 1"
@@ -303,6 +303,7 @@ export default function Goldibite() {
 					link="https://www.figma.com/board/YEdqSbBVAEBjZBd3B1KDP4/Site-Map?node-id=0-1&p=f&t=JpVHkO77rbvsyzYR-0"
 					linkText="Check out GoldiBite's Site Map!"
 				/>
+				<p className={styles.paragraphTitle}>Wireframes</p>
 				<Carousel images={carouselImages} />
 				<h2 className={styles.h2}>Refining & Finalizing the Design</h2>
 				<ParagraphBlock

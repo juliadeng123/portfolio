@@ -79,7 +79,7 @@
 }
 
 .projectTitle {
-	font-size: 1.25em;
+	font-size: 1.5em;
 	font-weight: bold;
 }
 
@@ -104,6 +104,10 @@
 		gap: 5em;
 		padding-left: 2em;
 		padding-right: 2em;
+	}
+
+	.projectTitle {
+		font-size: 2em;
 	}
 
 	.projectText {
@@ -132,10 +136,6 @@
 
 	.jobTitle {
 		font-size: 2.5em;
-	}
-
-	.projectTitle {
-		font-size: 2em;
 	}
 
 	.projectDescription {

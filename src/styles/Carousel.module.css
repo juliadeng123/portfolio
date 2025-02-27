@@ -28,14 +28,13 @@
 	scroll-snap-align: start;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: left;
 	justify-content: center;
 	max-width: 100%;
 }
 
 .imageLabel {
-	font-size: 1.25rem;
-	padding-bottom: 0.5em;
+	font-size: 1.5em;
 }
 
 .carouselItem img {
@@ -78,7 +77,7 @@
 	}
 
 	.imageLabel {
-		font-size: 1.5rem;
+		font-size: 1.75rem;
 	}
 	.arrowButton:hover,
 	.arrowButton:active {
@@ -93,7 +92,7 @@
 	}
 
 	.imageLabel {
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 	}
 
 	.arrowButton:active {
