@@ -440,8 +440,8 @@ export default function Goldibite() {
 					text={`What I initially thought users wanted turned out to be different from what they actually needed, which is why constant user testing was essential to gain a true understanding of their needs and preferences. Continuous iterations were necessary to ensure consistent progress and to stay on track with time, especially during the app design and refinement process. Also, working with a large team of 8 people was challenging, it required consistent communication and collaboration to ensure everyone was aligned with the project’s vision and goals.`}
 				/>
 				<ParagraphBlock
-					title={"Next Time"}
-					text={`Moving forward, prioritizing clearer communication channels and project management tools will help streamline workflows. While emphasizing more early-stage user testing will allow for capturing of valuable user insights before making significant design decisions. Also, engaging users earlier and more frequently in the process will ensure their needs are better understood, leading to more effective time management and a more user-centered design approach in the future.`}
+					title={"Looking Ahead"}
+					text={`Prioritizing clearer communication channels and project management tools will help streamline workflows. While emphasizing more early-stage user testing will allow for capturing of valuable user insights before making significant design decisions. Also, engaging users earlier and more frequently in the process will ensure their needs are better understood, leading to more effective time management and a more user-centered design approach in the future.`}
 				/>
 				<div className={styles.software}>
 					<h3>Software Used</h3>
