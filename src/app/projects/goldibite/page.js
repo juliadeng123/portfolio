@@ -55,7 +55,7 @@ export default function Goldibite() {
 				</div>
 				<div className={styles.headerRight}>
 					<img
-						src="/assets/images/home-goldibite.png"
+						src="/assets/images/goldibite.png"
 						alt="GoldiBite Image"
 						className={styles.headerImage}
 						layout="responsive"

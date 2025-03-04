@@ -28,7 +28,7 @@ export default function Dreamyfizz() {
 				</div>
 				<div className={styles.headerRight}>
 					<img
-						src="/assets/images/home-dreamyfizz.png"
+						src="/assets/images/dreamyfizz.png"
 						alt="Dreamy Fizz Image"
 						className={styles.headerImage}
 						layout="responsive"

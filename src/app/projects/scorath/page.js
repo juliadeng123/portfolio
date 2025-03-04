@@ -29,7 +29,7 @@ export default function Scorath() {
 				</div>
 				<div className={styles.headerRight}>
 					<img
-						src="/assets/images/home-scorath.png"
+						src="/assets/images/scorath.png"
 						alt="The Scorath Image"
 						className={styles.headerImage}
 						layout="responsive"

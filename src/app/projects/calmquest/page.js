@@ -103,7 +103,7 @@ export default function Calmquest() {
 				</div>
 				<div className={styles.headerRight}>
 					<img
-						src="/assets/images/home-calmquest.png"
+						src="/assets/images/calmquest.png"
 						alt="CalmQuest Image"
 						className={styles.headerImage}
 						layout="responsive"

@@ -13,8 +13,8 @@ export default function Home() {
 			description:
 				"Food safety app for travelers with food allergies or sensitivities",
 			image: "/assets/images/home-goldibite.png",
-			imageWidth: 271,
-			imageHeight: 268,
+			imageWidth: 303,
+			imageHeight: 300,
 		},
 		{
 			id: 2,
@@ -24,8 +24,8 @@ export default function Home() {
 			description:
 				"A mental wellness web app where users can self-reflect about their day",
 			image: "/assets/images/home-calmquest.png",
-			imageWidth: 271,
-			imageHeight: 268,
+			imageWidth: 303,
+			imageHeight: 300,
 		},
 		{
 			id: 3,
@@ -35,8 +35,8 @@ export default function Home() {
 			description:
 				"Magazine advertisement for a unique custom creature made from a rat, scorpion, and moth",
 			image: "/assets/images/home-scorath.png",
-			imageWidth: 150,
-			imageHeight: 200,
+			imageWidth: 200,
+			imageHeight: 300,
 		},
 		{
 			id: 4,
@@ -46,8 +46,8 @@ export default function Home() {
 			description:
 				"Product label design for canned sparkling water with 3 different flavours",
 			image: "/assets/images/home-dreamyfizz.png",
-			imageWidth: 300,
-			imageHeight: 250,
+			imageWidth: 311,
+			imageHeight: 300,
 		},
 	];
 
@@ -94,13 +94,15 @@ export default function Home() {
 								key={project.id}
 							>
 								<div className={styles.projectCard}>
-									<img
-										src={project.image}
-										alt={project.title}
-										className={styles.projectImage}
-										width={project.imageWidth}
-										height={project.imageHeight}
-									/>
+									<div className={styles.projectCardImage}>
+										<img
+											src={project.image}
+											alt={project.title}
+											className={styles.projectImage}
+											width={project.imageWidth}
+											height={project.imageHeight}
+										/>
+									</div>
 									<div className={styles.projectText}>
 										<h3 className={styles.projectTitle}>
 											{project.title}
