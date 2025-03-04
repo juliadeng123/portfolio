@@ -213,47 +213,6 @@ export default function Goldibite() {
 					</div>
 				</div>
 				<ParagraphBlock
-					title="Design Challenges"
-					text={
-						"The primary challenge was creating an intuitive and user-friendly interface that enables users to quickly access critical information during emergencies. The design had to strike a balance between simplicity and functionality while seamlessly integrating AI features, ensuring that users could navigate the app easily even in stressful situations. Additionally, incorporating features like Dark Mode required thoughtful design to maintain visual accessibility while reducing eye strain."
-					}
-					text2={
-						"Another key challenge was developing a flexible system that could accommodate diverse user needs, including dietary restrictions and language translations for travelers. It was essential that the app reflected GoldiBite’s core values of personalization, safety, convenience, flexibility, and accessibility."
-					}
-				/>
-				<div className={`${styles.imagesDisplay}`}>
-					<div>
-						<p className={styles.paragraphTitle}>Settings</p>
-						<img
-							src="/assets/images/goldibite/settings.png"
-							alt="Settings Screen"
-							className={`${styles.image}`}
-							width="360"
-							height="758"
-						/>
-					</div>
-					<div>
-						<p className={styles.paragraphTitle}>Emergency</p>
-						<img
-							src="/assets/images/goldibite/emergency.png"
-							alt="Emergency Screen"
-							className={`${styles.image}`}
-							width="360"
-							height="758"
-						/>
-					</div>
-					<div>
-						<p className={styles.paragraphTitle}>Menu Results</p>
-						<img
-							src="/assets/images/goldibite/menu-result.png"
-							alt="Menu Result Screen"
-							className={`${styles.image}`}
-							width="360"
-							height="758"
-						/>
-					</div>
-				</div>
-				<ParagraphBlock
 					title="User Research & Personas"
 					text={
 						"Through primary research, including a survey of individuals with food allergies, common allergens such as nuts, dairy, and shellfish was identified. To prevent allergic reactions, many respondents rely on meticulous label reading, carrying epinephrine auto-injectors (EPIPEN), and clear communication when dining out or traveling. Secondary research, including discussions on Reddit and relevant blog posts, provided insights into the experiences and restrictions faced by individuals with food allergies and sensitivities. This highlighted the emotional impact of allergies and the need for accessible resources."
@@ -312,6 +271,113 @@ export default function Goldibite() {
 				<Carousel images={carouselImages} />
 				<h2 className={styles.h2}>Refining & Finalizing the Design</h2>
 				<ParagraphBlock
+					title="External Testing"
+					text={`External usability testing was conducted with five testers that were either instructors or friends who had no prior knowledge of the app. Their feedback focused on navigation, clarity of content, and general user experience.`}
+				/>{" "}
+				<ol className={styles.orderedList}>
+					<li>
+						<ParagraphBlock
+							text={
+								<>
+									<strong>Navigation Issues: </strong>Testers
+									were unsure where to begin and had
+									difficulty understanding the calls to
+									action. One tester was confused by the
+									barcode scanner animation, mistakenly
+									thinking they could scan a product
+									immediately without additional steps.
+									Another tester struggled to decide whether
+									to use the barcode scanner or the emergency
+									feature first. A recommendation was made to
+									show the barcode scanner first, followed by
+									the emergency feature, to reduce confusion.
+								</>
+							}
+						/>
+					</li>
+					<li>
+						<ParagraphBlock
+							text={
+								<>
+									<strong>Guide Content: </strong>
+									Some testers felt that the guides were
+									either redundant or needed more context. For
+									example, one tester liked the "traveling
+									with someone with nut allergies" guide,
+									suggesting that all guides should be more
+									situation-specific and practical. The "How
+									to use an EpiPen" guide was critiqued for
+									assuming prior knowledge of the device.
+									Testers suggested adding more basic
+									information, such as "What is an EpiPen?" or
+									"What is anaphylaxis?"
+								</>
+							}
+						/>
+					</li>
+					<li>
+						<ParagraphBlock
+							text={
+								<>
+									<strong>Home Page Confusion: </strong>The
+									home page layout was found to be confusing
+									as some Testers were unsure how to proceed
+									or where to go next. There was feedback
+									suggesting that the home page should be more
+									organized with clearly defined sections, and
+									that it should be scrollable to improve
+									usability.
+								</>
+							}
+						/>
+					</li>
+					<li>
+						<ParagraphBlock
+							text={
+								<>
+									<strong>Menu Scanner: </strong>Testers
+									suggested incorporating the ability to scan
+									QR codes from digital menus, which would
+									help travelers who encounter these menus in
+									restaurants. This addition would allow the
+									app to break down menu items and ingredients
+									for users with dietary restrictions.
+								</>
+							}
+						/>
+					</li>
+					<li>
+						<ParagraphBlock
+							text={
+								<>
+									<strong>Minor Issues: </strong>
+									Testers identified some minor issues, such
+									as spelling errors (e.g., "epipen" instead
+									of "EpiPen") and suggestions for improving
+									the home page’s image organization.
+									Additionally, some testers noted that the
+									text in certain guides was too lengthy and
+									would benefit from being more concise and
+									user-friendly.
+								</>
+							}
+						/>
+					</li>
+				</ol>
+				<ParagraphBlock
+					text={
+						<>
+							<strong>Conclusion: </strong>
+							Overall, testers suggested improvements to the
+							navigation flow, clearer and more practical guide
+							content, and a better-structured home page. These
+							changes would enhance the app's usability and make
+							it more intuitive for users who are unfamiliar with
+							its features.
+						</>
+					}
+				/>
+				<ParagraphBlock
 					title="Fine-Tuning"
 					text={`Several key app features and screens were refined based on user feedback from testing. Additionally, new micro-interactions and animations were integrated to further enhance the overall user experience. The main focus toward the end of the project was on improving the layout, performance, and usability.`}
 				/>
@@ -323,9 +389,59 @@ export default function Goldibite() {
 					link="https://www.figma.com/proto/O6PQwJylJuMtAWuRogJTpD/Screens?node-id=40000001-21489&p=f&t=AHszGS096AqBEkwQ-0&scaling=scale-down&content-scaling=fixed&page-id=503%3A1740&starting-point-node-id=40000001%3A21489&show-proto-sidebar=1"
 					linkText="Check out Dark Mode!"
 				/>
-				<h2 className={styles.h2}>Outcome</h2>
+				<h2 className={styles.h2}>Key Insights</h2>
 				<ParagraphBlock
+					title={"Outcome"}
 					text={`The final design of GoldiBite offers a user-centric experience that prioritizes safety and accessibility. The app's intuitive interface allows users to quickly access vital information during emergencies, and features like Dark Mode enhance usability in various conditions. Through thoughtful design and rigorous testing, GoldiBite effectively supports individuals in managing food-related emergencies with confidence.`}
+				/>
+				<ParagraphBlock
+					title="Challenges"
+					text={
+						"The primary challenge was creating an intuitive and user-friendly interface that enables users to quickly access critical information during emergencies. The design had to strike a balance between simplicity and functionality while seamlessly integrating AI features, ensuring that users could navigate the app easily even in stressful situations. Additionally, incorporating features like Dark Mode required thoughtful design to maintain visual accessibility while reducing eye strain."
+					}
+					text2={
+						"Another key challenge was developing a flexible system that could accommodate diverse user needs, including dietary restrictions and language translations for travelers. It was essential that the app reflected GoldiBite’s core values of personalization, safety, convenience, flexibility, and accessibility."
+					}
+				/>
+				<div className={`${styles.imagesDisplay}`}>
+					<div>
+						<p className={styles.paragraphTitle}>Settings</p>
+						<img
+							src="/assets/images/goldibite/settings.png"
+							alt="Settings Screen"
+							className={`${styles.image}`}
+							width="360"
+							height="758"
+						/>
+					</div>
+					<div>
+						<p className={styles.paragraphTitle}>Emergency</p>
+						<img
+							src="/assets/images/goldibite/emergency.png"
+							alt="Emergency Screen"
+							className={`${styles.image}`}
+							width="360"
+							height="758"
+						/>
+					</div>
+					<div>
+						<p className={styles.paragraphTitle}>Menu Results</p>
+						<img
+							src="/assets/images/goldibite/menu-result.png"
+							alt="Menu Result Screen"
+							className={`${styles.image}`}
+							width="360"
+							height="758"
+						/>
+					</div>
+				</div>
+				<ParagraphBlock
+					title={"Learnings"}
+					text={`What I initially thought users wanted turned out to be different from what they actually needed, which is why constant user testing was essential to gain a true understanding of their needs and preferences. Continuous iterations were necessary to ensure consistent progress and to stay on track with time, especially during the app design and refinement process. Also, working with a large team of 8 people was challenging, it required consistent communication and collaboration to ensure everyone was aligned with the project’s vision and goals.`}
+				/>
+				<ParagraphBlock
+					title={"Next Time"}
+					text={`Moving forward, prioritizing clearer communication channels and project management tools will help streamline workflows. While emphasizing more early-stage user testing will allow for capturing of valuable user insights before making significant design decisions. Also, engaging users earlier and more frequently in the process will ensure their needs are better understood, leading to more effective time management and a more user-centered design approach in the future.`}
 				/>
 				<div className={styles.software}>
 					<h3>Software Used</h3>

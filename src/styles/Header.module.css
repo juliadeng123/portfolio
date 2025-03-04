@@ -41,7 +41,8 @@
 	padding: 1em;
 }
 
-.sideNav ul li:active {
+.sideNav ul li:active,
+.sideNav ul li:hover {
 	color: var(--dark-grey);
 	background-color: var(--grey);
 	border-radius: 1em;
