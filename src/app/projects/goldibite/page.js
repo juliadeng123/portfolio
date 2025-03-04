@@ -1,7 +1,6 @@
 import styles from "@/styles/Project.module.css";
 import ParagraphBlock from "@/components/ParagraphBlock";
 import ButtonLink from "@/components/ButtonLink";
-import Carousel from "@/components/Carousel";
 
 export const metadata = {
 	title: "GoldiBite",
@@ -9,28 +8,6 @@ export const metadata = {
 };
 
 export default function Goldibite() {
-	const carouselImages = [
-		{
-			label: "Low Fidelity Ver 1",
-			src: "/assets/images/goldibite/lo-fi-1.png",
-			alt: "Low Fidelity Ver 1",
-		},
-		{
-			label: "Low Fidelity Ver 2",
-			src: "/assets/images/goldibite/lo-fi-2.png",
-			alt: "Low Fidelity Ver 2",
-		},
-		{
-			label: "High Fidelity Ver 1",
-			src: "/assets/images/goldibite/hi-fi-1.png",
-			alt: "High Fidelity Ver 1",
-		},
-		{
-			label: "High Fidelity Ver 2",
-			src: "/assets/images/goldibite/hi-fi-2.png",
-			alt: "High Fidelity Ver 2",
-		},
-	];
 	return (
 		<div>
 			<h1 className={styles.title}>GoldiBite</h1>
@@ -268,7 +245,56 @@ export default function Goldibite() {
 					linkText="Check out GoldiBite's Site Map!"
 				/>
 				<p className={styles.paragraphTitle}>Wireframes</p>
-				<Carousel images={carouselImages} />
+				<div className={`${styles.imagesDisplay}`}>
+					<div>
+						<p className={styles.paragraphTitle}>
+							Low Fidelity Ver 1
+						</p>
+						<img
+							src="/assets/images/goldibite/lo-fi-1.png"
+							alt="Low Fidelity Ver 1"
+							className={`${styles.image}`}
+							width="360"
+							height="758"
+						/>
+					</div>
+					<img
+						src="/assets/images/goldibite/right-arrow.png"
+						alt="Right Arrow Sign"
+						className={`${styles.rightArrow}`}
+						width="60"
+						height="84"
+					/>
+					<div>
+						<p className={styles.paragraphTitle}>
+							Low Fidelity Ver 2
+						</p>
+						<img
+							src="/assets/images/goldibite/lo-fi-2.png"
+							alt="Low Fidelity Ver 2"
+							className={`${styles.image}`}
+							width="360"
+							height="758"
+						/>
+					</div>
+					<img
+						src="/assets/images/goldibite/right-arrow.png"
+						alt="Right Arrow Sign"
+						className={`${styles.rightArrow}`}
+						width="60"
+						height="84"
+					/>
+					<div>
+						<p className={styles.paragraphTitle}>High Fidelity</p>
+						<img
+							src="/assets/images/goldibite/hi-fi.png"
+							alt="High Fidelity"
+							className={`${styles.image}`}
+							width="360"
+							height="758"
+						/>
+					</div>
+				</div>
 				<h2 className={styles.h2}>Refining & Finalizing the Design</h2>
 				<ParagraphBlock
 					title="External Testing"
