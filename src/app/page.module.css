@@ -51,8 +51,8 @@
 	padding: 0.5em 1em;
 	border: 3px solid var(--red);
 	border-radius: 5px;
-	background-color: var(--darker-grey);
-	color: white;
+	background-color: var(--filter-background);
+	color: var(--foreground-color);
 	cursor: pointer;
 	transition: background-color 0.2s ease;
 }
@@ -81,7 +81,7 @@
 	padding: 1em;
 	border: 5px solid var(--blue);
 	border-radius: 10px;
-	background-color: var(--darker-grey);
+	background-color: var(--filter-background);
 	width: 100%;
 	box-sizing: border-box;
 }

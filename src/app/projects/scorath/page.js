@@ -3,7 +3,7 @@ import ParagraphBlock from "@/components/ParagraphBlock";
 
 export const metadata = {
 	title: "The Scorath",
-	description: "Magazine advertisement for a custom creature",
+	description: "Magazine advertisement for a custom creature"
 };
 
 export default function Scorath() {
@@ -60,6 +60,7 @@ export default function Scorath() {
 						<img
 							src="/assets/images/plusSign.png"
 							alt="Equal Sign"
+							className="iconSign"
 							width="39"
 							height="39"
 						/>
@@ -73,6 +74,7 @@ export default function Scorath() {
 						<img
 							src="/assets/images/plusSign.png"
 							alt="Plus Sign"
+							className="iconSign"
 							width="39"
 							height="39"
 						/>
@@ -88,6 +90,7 @@ export default function Scorath() {
 						<img
 							src="/assets/images/equalSign.png"
 							alt="Equal Sign"
+							className="iconSign"
 							width="39"
 							height="40"
 						/>
@@ -116,6 +119,7 @@ export default function Scorath() {
 					<img
 						src="/assets/images/plusSign.png"
 						alt="Plus Sign"
+						className="iconSign"
 						width="39"
 						height="39"
 					/>

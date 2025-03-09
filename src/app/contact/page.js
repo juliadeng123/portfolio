@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const metadata = {
 	title: "Contact Me",
-	description: "Contact via email or LinkedIn",
+	description: "Contact via email or LinkedIn"
 };
 
 export default function Contact() {
@@ -18,23 +18,44 @@ export default function Contact() {
 					<div className="footer-icons contact-col">
 						<div className="contact-links">
 							<a href="mailto:juliadeng571@gmail.com">
-								<Image
-									src="/assets/images/mail.png"
-									width={50}
-									height={50}
-									alt="Mail Icon"
-								/>
+								<div className="logo contact-col">
+									<Image
+										src="/assets/images/mail.png"
+										className="logo-white"
+										width={50}
+										height={50}
+										alt="Mail Icon"
+									/>
+									<Image
+										src="/assets/images/mail-black.png"
+										className="logo-black"
+										width={50}
+										height={50}
+										alt="Mail Icon"
+									/>
+								</div>
 								&nbsp;juliadeng571@gmail.com
 							</a>
 						</div>
 						<div className="contact-links">
 							<a href="https://www.linkedin.com/in/julia-deng-0123/">
-								<Image
-									src="/assets/images/linkedin.png"
-									width={50}
-									height={50}
-									alt="LinkedIn Icon"
-								/>
+								<div className="logo contact-col">
+									<Image
+										src="/assets/images/linkedin.png"
+										className="logo-white"
+										width={50}
+										height={50}
+										alt="LinkedIn Icon"
+									/>
+
+									<Image
+										src="/assets/images/linkedin-black.png"
+										className="logo-black"
+										width={50}
+										height={50}
+										alt="LinkedIn Icon"
+									/>
+								</div>
 								&nbsp;LinkedIn
 							</a>
 						</div>

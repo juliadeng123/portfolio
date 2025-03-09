@@ -4,7 +4,7 @@ import ButtonLink from "@/components/ButtonLink";
 
 export const metadata = {
 	title: "GoldiBite",
-	description: "Food safety app for travelers with allergies",
+	description: "Food safety app for travelers with allergies"
 };
 
 export default function Goldibite() {
@@ -174,7 +174,7 @@ export default function Goldibite() {
 					<img
 						src="/assets/images/goldibite/right-arrow.png"
 						alt="Right Arrow Sign"
-						className={`${styles.rightArrow}`}
+						className={`${styles.rightArrow} iconSign`}
 						width="60"
 						height="84"
 					/>
@@ -261,7 +261,7 @@ export default function Goldibite() {
 					<img
 						src="/assets/images/goldibite/right-arrow.png"
 						alt="Right Arrow Sign"
-						className={`${styles.rightArrow}`}
+						className={`${styles.rightArrow} iconSign`}
 						width="60"
 						height="84"
 					/>
@@ -280,7 +280,7 @@ export default function Goldibite() {
 					<img
 						src="/assets/images/goldibite/right-arrow.png"
 						alt="Right Arrow Sign"
-						className={`${styles.rightArrow}`}
+						className={`${styles.rightArrow} iconSign`}
 						width="60"
 						height="84"
 					/>

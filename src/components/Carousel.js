@@ -65,6 +65,7 @@ export default function Carousel({ images }) {
 				<Image
 					src="/assets/images/left-arrow.png"
 					alt="Left Arrow"
+					className="iconSign"
 					width={34}
 					height={34}
 				/>
@@ -93,6 +94,7 @@ export default function Carousel({ images }) {
 				<Image
 					src="/assets/images/right-arrow.png"
 					alt="Right Arrow"
+					className="iconSign"
 					width={34}
 					height={34}
 				/>

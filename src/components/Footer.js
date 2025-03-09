@@ -6,33 +6,63 @@ export default async function Footer() {
 		<footer>
 			<div className="footer-image">
 				<Link href={"/"}>
-					<Image
-						src="/assets/images/logo-white.png"
-						className="footer-image-logo"
-						width={125}
-						height={125}
-						alt="White Logo"
-					/>
+					<div className="logo">
+						<Image
+							src="/assets/images/logo-white.png"
+							className="footer-image-logo logo-white"
+							width={125}
+							height={125}
+							alt="White Logo"
+						/>
+						<Image
+							src="/assets/images/logo-black.png"
+							className="footer-image-logo logo-black"
+							width={125}
+							height={125}
+							alt="Black Logo"
+						/>
+					</div>
 				</Link>
 			</div>
 			<div className="footer-contact">
 				<h2>Find me here</h2>
 				<div className="footer-icons">
 					<a href="mailto:juliadeng571@gmail.com">
-						<Image
-							src="/assets/images/mail.png"
-							width={50}
-							height={50}
-							alt="Mail Icon"
-						/>
+						<div className="logo">
+							<Image
+								src="/assets/images/mail.png"
+								className="logo-white"
+								width={50}
+								height={50}
+								alt="Mail Icon"
+							/>
+							<Image
+								src="/assets/images/mail-black.png"
+								className="logo-black"
+								width={50}
+								height={50}
+								alt="Mail Icon"
+							/>
+						</div>
 					</a>
 					<a href="https://www.linkedin.com/in/julia-deng-0123/">
-						<Image
-							src="/assets/images/linkedin.png"
-							width={50}
-							height={50}
-							alt="LinkedIn Icon"
-						/>
+						<div className="logo">
+							<Image
+								src="/assets/images/linkedin.png"
+								className="logo-white"
+								width={50}
+								height={50}
+								alt="LinkedIn Icon"
+							/>
+
+							<Image
+								src="/assets/images/linkedin-black.png"
+								className="logo-black"
+								width={50}
+								height={50}
+								alt="LinkedIn Icon"
+							/>
+						</div>
 					</a>
 				</div>
 			</div>
