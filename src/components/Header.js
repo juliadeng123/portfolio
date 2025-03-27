@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "@/styles/Header.module.css";
 import { Sun, Moon } from "lucide-react";
+import Wheel from "@/components/Wheel";
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -75,6 +76,9 @@ export default function Header() {
 				</Link>
 			</div>
 			<div className={styles.headerRight}>
+				<div>
+					<Wheel />
+				</div>
 				<div className={styles.toggle}>
 					<Sun className={styles.icon} />
 					<label className={styles.switch}>
