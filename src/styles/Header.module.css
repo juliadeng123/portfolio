@@ -52,7 +52,7 @@
 	position: absolute;
 	cursor: pointer;
 	right: -2.5em;
-	top: 2.5em;
+	top: 3.5em;
 	background-color: var(--dark-grey);
 	border: none;
 	transition: opacity 0.5s ease, right 0.5s ease;
@@ -66,6 +66,11 @@
 .hamburger,
 .toggle {
 	cursor: pointer;
+}
+
+.hamburger {
+	position: relative;
+	top: 2em;
 }
 
 .navLinks {

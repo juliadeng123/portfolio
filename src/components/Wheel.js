@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "@/styles/Wheel.module.css";
 import ButtonLink from "./ButtonLink";
 import Image from "next/image";
+import { FerrisWheel } from "lucide-react";
 
 const projects = [
 	{
@@ -75,14 +76,21 @@ export default function Wheel() {
 
 	return (
 		<div className={styles.wheelContainer}>
-			<button onClick={() => setIsOpen(true)}>Open Wheel</button>
+			<div>
+				<FerrisWheel
+					onClick={() => setIsOpen(true)}
+					className={styles.icon}
+				/>
+			</div>
 			{isOpen && (
-				<div className={styles.wheelWrapper}>
-					<div
-						className={styles.wheel}
-						style={{
-							transform: `rotate(${angle}deg)`,
-							background: `conic-gradient(
+				// <div className={styles.wheelOverlay}>
+				<div className={styles.wheelContent}>
+					<div className={styles.wheelWrapper}>
+						<div
+							className={styles.wheel}
+							style={{
+								transform: `rotate(${angle}deg)`,
+								background: `conic-gradient(
                     ${projects
 						.map(
 							(p, i) =>
@@ -90,10 +98,12 @@ export default function Wheel() {
 									((i + 1) * 100) / projects.length
 								}%`
 						)
-						.join(", ")}
-                  )`
-						}}
-					/>
+						.join(", ")})`
+							}}
+						/>
+						<div className={styles.wheelPointer} />
+					</div>
+
 					<button
 						onClick={spinWheel}
 						disabled={spinning}
@@ -138,6 +148,7 @@ export default function Wheel() {
 						/>
 					</button>
 				</div>
+				// </div>
 			)}
 		</div>
 	);

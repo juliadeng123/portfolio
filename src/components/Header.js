@@ -76,9 +76,6 @@ export default function Header() {
 				</Link>
 			</div>
 			<div className={styles.headerRight}>
-				<div>
-					<Wheel />
-				</div>
 				<div className={styles.toggle}>
 					<Sun className={styles.icon} />
 					<label className={styles.switch}>
@@ -91,6 +88,7 @@ export default function Header() {
 						<span className={styles.slider}></span>
 					</label>
 					<Moon className={styles.icon} />
+					<Wheel />
 				</div>
 				<div className={styles.hamburger} onClick={toggleNav}>
 					<Image
