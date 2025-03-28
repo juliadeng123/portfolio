@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from "@/styles/Wheel.module.css";
+import ButtonLink from "./ButtonLink";
+import Image from "next/image";
 
 const projects = [
 	{
@@ -52,10 +54,11 @@ const projects = [
 	}
 ];
 
-export default function ButtonLink() {
+export default function Wheel() {
 	const [isOpen, setIsOpen] = useState(false);
 	const [angle, setAngle] = useState(0);
 	const [spinning, setSpinning] = useState(false);
+	const [selectedProject, setSelectedProject] = useState(null);
 
 	const spinWheel = () => {
 		const randomAngle = 1440 + Math.floor(Math.random() * 360);
@@ -97,6 +100,42 @@ export default function ButtonLink() {
 						className={styles.spinButton}
 					>
 						{spinning ? "Spinning..." : "Spin"}
+					</button>
+					{selectedProject && (
+						<div className={styles.projectDetails}>
+							<img
+								src={selectedProject.image}
+								alt={selectedProject.title}
+								className={styles.projectImage}
+							/>
+							<h1>{selectedProject.title}</h1>
+							<p>{selectedProject.description}</p>
+							<br />
+							<ButtonLink
+								link={`projects/${selectedProject.page}`}
+								linkText={`Check out ${selectedProject.title}`}
+							/>
+						</div>
+					)}
+					<button
+						onClick={spinWheel}
+						disabled={spinning}
+						className={styles.spinButton}
+					>
+						{spinning ? "Spinning..." : "Spin Again"}
+					</button>
+
+					<button
+						className={styles.closebtn}
+						onClick={() => setIsOpen(false)}
+					>
+						<Image
+							src="/assets/images/menu-close-icon.png"
+							className="png-invert"
+							width={33.58}
+							height={33.66}
+							alt="Close Icon"
+						/>
 					</button>
 				</div>
 			)}

@@ -1,3 +1,4 @@
+/*Wheel*/
 .wheelContainer {
 	text-align: center;
 	margin: 20px;
@@ -16,4 +17,57 @@
 	border-radius: 100%;
 	transition: transform 4s ease-out;
 	border: 4px solid var(--dark-grey);
+}
+
+/*Project Details*/
+.projectDetails {
+	margin-top: 15px;
+	padding: 10px;
+	background: var(--dark-grey);
+	border-radius: 5px;
+}
+
+.projectImage {
+	width: 50%;
+	border-radius: 5px;
+}
+
+/*Spin button*/
+.spinButton {
+	background-color: var(--blue);
+	color: var(--white);
+	border: none;
+	border-radius: 5px;
+	padding: 0.75em 1.25em;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	margin: 0em;
+	margin-bottom: 1em;
+}
+
+.spinButton:hover {
+	background-color: var(--light-blue);
+	text-decoration: underline;
+}
+
+.spinButton:active {
+	background-color: var(--dark-blue);
+}
+
+/*Close button*/
+.closebtn {
+	position: absolute;
+	cursor: pointer;
+	right: -2.5em;
+	top: 2.5em;
+	background-color: var(--background);
+	border: none;
+	transition: opacity 0.5s ease, right 0.5s ease;
+}
+
+.closebtn {
+	opacity: 1;
+	right: 2.5em;
 }
