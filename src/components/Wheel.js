@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "@/styles/Wheel.module.css";
 
 const projects = [
@@ -51,13 +52,33 @@ const projects = [
 	}
 ];
 
-const [isOpen, setIsOpen] = useState(false);
-
 export default function ButtonLink() {
+	const [isOpen, setIsOpen] = useState(false);
+	const [angle, setAngle] = useState(0);
+
 	return (
 		<div className={styles.wheelContainer}>
 			<button onClick={() => setIsOpen(true)}>Open Wheel</button>
-			<p>Wheel of Projects</p>
+			{isOpen && (
+				<div className={styles.wheelWrapper}>
+					<div
+						className={styles.wheel}
+						style={{
+							transform: `rotate(${angle}deg)`,
+							background: `conic-gradient(
+                    ${projects
+						.map(
+							(p, i) =>
+								`${p.color} ${(i * 100) / projects.length}% ${
+									((i + 1) * 100) / projects.length
+								}%`
+						)
+						.join(", ")}
+                  )`
+						}}
+					/>
+				</div>
+			)}
 		</div>
 	);
 }
