@@ -51,6 +51,13 @@ const projects = [
 	}
 ];
 
+const [isOpen, setIsOpen] = useState(false);
+
 export default function ButtonLink() {
-	return <div className={styles.wheelContainer}>wheel</div>;
+	return (
+		<div className={styles.wheelContainer}>
+			<button onClick={() => setIsOpen(true)}>Open Wheel</button>
+			<p>Wheel of Projects</p>
+		</div>
+	);
 }
