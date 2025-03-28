@@ -60,6 +60,7 @@ export default function Wheel() {
 	const [angle, setAngle] = useState(0);
 	const [spinning, setSpinning] = useState(false);
 	const [selectedProject, setSelectedProject] = useState(null);
+	const [firstSpinCompleted, setFirstSpinCompleted] = useState(false);
 
 	const spinWheel = () => {
 		const randomAngle = 1440 + Math.floor(Math.random() * 360);
@@ -71,7 +72,14 @@ export default function Wheel() {
 		setTimeout(() => {
 			setSpinning(false);
 			setSelectedProject(projects[selectedIndex]);
+			setIsOpen(true);
+			setFirstSpinCompleted(true);
 		}, 4000);
+	};
+
+	const closeOverlay = () => {
+		setIsOpen(false);
+		setSelectedProject(null);
 	};
 
 	return (
@@ -83,14 +91,14 @@ export default function Wheel() {
 				/>
 			</div>
 			{isOpen && (
-				// <div className={styles.wheelOverlay}>
-				<div className={styles.wheelContent}>
-					<div className={styles.wheelWrapper}>
-						<div
-							className={styles.wheel}
-							style={{
-								transform: `rotate(${angle}deg)`,
-								background: `conic-gradient(
+				<div className={styles.wheelOverlay}>
+					<div className={styles.wheelContent}>
+						<div className={styles.wheelWrapper}>
+							<div
+								className={styles.wheel}
+								style={{
+									transform: `rotate(${angle}deg)`,
+									background: `conic-gradient(
                     ${projects
 						.map(
 							(p, i) =>
@@ -99,56 +107,60 @@ export default function Wheel() {
 								}%`
 						)
 						.join(", ")})`
-							}}
-						/>
-						<div className={styles.wheelPointer} />
-					</div>
-
-					<button
-						onClick={spinWheel}
-						disabled={spinning}
-						className={styles.spinButton}
-					>
-						{spinning ? "Spinning..." : "Spin"}
-					</button>
-					{selectedProject && (
-						<div className={styles.projectDetails}>
-							<img
-								src={selectedProject.image}
-								alt={selectedProject.title}
-								className={styles.projectImage}
+								}}
 							/>
-							<h1>{selectedProject.title}</h1>
-							<p>{selectedProject.description}</p>
-							<br />
-							<ButtonLink
-								link={`projects/${selectedProject.page}`}
-								linkText={`Check out ${selectedProject.title}`}
-							/>
+							<div className={styles.wheelPointer} />
 						</div>
-					)}
-					<button
-						onClick={spinWheel}
-						disabled={spinning}
-						className={styles.spinButton}
-					>
-						{spinning ? "Spinning..." : "Spin Again"}
-					</button>
-
-					<button
-						className={styles.closebtn}
-						onClick={() => setIsOpen(false)}
-					>
-						<Image
-							src="/assets/images/menu-close-icon.png"
-							className="png-invert"
-							width={33.58}
-							height={33.66}
-							alt="Close Icon"
-						/>
-					</button>
+						{!firstSpinCompleted && (
+							<button
+								onClick={spinWheel}
+								disabled={spinning}
+								className={styles.spinButton}
+							>
+								{spinning ? "Spinning..." : "Spin"}
+							</button>
+						)}
+						{firstSpinCompleted && selectedProject && (
+							<div className={styles.projectDetails}>
+								<img
+									src={selectedProject.image}
+									alt={selectedProject.title}
+									className={styles.projectImage}
+								/>
+								<h1>{selectedProject.title}</h1>
+								<p>{selectedProject.description}</p>
+								<br />
+								<ButtonLink
+									link={`projects/${selectedProject.page}`}
+									linkText={`Check out ${selectedProject.title}`}
+								/>
+								<div>
+									<button
+										onClick={spinWheel}
+										disabled={spinning}
+										className={styles.spinButton}
+									>
+										{spinning
+											? "Spinning..."
+											: "Spin Again"}
+									</button>
+									<button
+										className={styles.closebtn}
+										onClick={closeOverlay}
+									>
+										<Image
+											src="/assets/images/menu-close-icon.png"
+											className="png-invert"
+											width={33.58}
+											height={33.66}
+											alt="Close Icon"
+										/>
+									</button>
+								</div>
+							</div>
+						)}
+					</div>
 				</div>
-				// </div>
 			)}
 		</div>
 	);
