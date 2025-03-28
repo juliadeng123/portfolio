@@ -1,7 +1,6 @@
 /*Wheel*/
 .wheelContainer {
 	text-align: center;
-	margin: 20px;
 }
 
 .wheel {
@@ -12,13 +11,14 @@
 }
 
 .wheelPointer {
-	position: absolute;
-	bottom: -15px;
-	left: 50%;
-	transform: translateX(-50%) rotate(45deg);
+	position: relative;
+	bottom: 1em;
 	width: 2em;
 	height: 2em;
-	background: var(--background-color);
+	background: var(--foreground-color);
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	z-index: 1;
+	margin-bottom: 0.5em;
 }
 
 .wheelOverlay {
@@ -41,6 +41,12 @@
 	position: relative;
 	width: 90%;
 	max-width: 600px;
+}
+
+.entireWheel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /*Project Details*/
@@ -97,21 +103,21 @@
 }
 
 .icon {
-	width: 4em;
-	height: 4em;
+	width: 3em;
+	height: 3em;
 	color: var(--foreground-color);
 	cursor: pointer;
-	padding: 1em;
-}
-
-.icon:hover {
-	background-color: var(--dark-grey);
-	border-radius: 1em;
+	padding: 0.25em;
 }
 
 .icon:active {
-	background-color: var(--grey);
-	color: var(--background-color);
+	background-color: var(--dark-grey);
+	border-radius: 5px;
+}
+
+.iconContainer {
+	display: flex;
+	flex-direction: row;
 }
 
 /* Tablet and Desktop*/
@@ -119,5 +125,22 @@
 	.wheel {
 		width: 20em;
 		height: 20em;
+	}
+
+	.icon {
+		width: 4em;
+		height: 4em;
+		padding: 0.5em;
+	}
+
+	.icon:hover {
+		background-color: var(--foreground-color);
+		color: var(--background-color);
+		border-radius: 1em;
+	}
+
+	.icon:active {
+		background-color: var(--grey);
+		color: var(--background-color);
 	}
 }

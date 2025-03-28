@@ -2,6 +2,7 @@
 import styles from "./page.module.css";
 import { useState } from "react";
 import Link from "next/link";
+import Wheel from "@/components/Wheel";
 
 export default function Home() {
 	const projects = [
@@ -14,7 +15,7 @@ export default function Home() {
 				"Food safety app for travelers with food allergies or sensitivities",
 			image: "/assets/images/home-goldibite.png",
 			imageWidth: 303,
-			imageHeight: 300,
+			imageHeight: 300
 		},
 		{
 			id: 2,
@@ -25,7 +26,7 @@ export default function Home() {
 				"A mental wellness web app where users can self-reflect about their day",
 			image: "/assets/images/home-calmquest.png",
 			imageWidth: 303,
-			imageHeight: 300,
+			imageHeight: 300
 		},
 		{
 			id: 3,
@@ -36,7 +37,7 @@ export default function Home() {
 				"Magazine advertisement for a unique custom creature made from a rat, scorpion, and moth",
 			image: "/assets/images/home-scorath.png",
 			imageWidth: 200,
-			imageHeight: 300,
+			imageHeight: 300
 		},
 		{
 			id: 4,
@@ -47,8 +48,8 @@ export default function Home() {
 				"Product label design for canned sparkling water with 3 different flavours",
 			image: "/assets/images/home-dreamyfizz.png",
 			imageWidth: 311,
-			imageHeight: 300,
-		},
+			imageHeight: 300
+		}
 	];
 
 	const filters = ["Featured", "UI/UX", "Graphic"];
@@ -72,20 +73,25 @@ export default function Home() {
 					</h2>
 				</div>
 				<div className={styles.container} id="projects">
-					<div className={styles.filterGroup}>
-						{filters.map((filter) => (
-							<button
-								key={filter}
-								className={`${styles.filterButton} ${
-									selectedFilter === filter
-										? styles.active
-										: ""
-								}`}
-								onClick={() => setSelectedFilter(filter)}
-							>
-								{filter}
-							</button>
-						))}
+					<div className={styles.bar}>
+						<div className={styles.filterGroup}>
+							{filters.map((filter) => (
+								<button
+									key={filter}
+									className={`${styles.filterButton} ${
+										selectedFilter === filter
+											? styles.active
+											: ""
+									}`}
+									onClick={() => setSelectedFilter(filter)}
+								>
+									{filter}
+								</button>
+							))}
+						</div>
+						<div>
+							<Wheel />
+						</div>
 					</div>
 					<div className={styles.projectList}>
 						{filteredProjects.map((project) => (

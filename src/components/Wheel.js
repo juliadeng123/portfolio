@@ -64,8 +64,9 @@ export default function Wheel() {
 
 	const spinWheel = () => {
 		const randomAngle = 1080 + Math.floor(Math.random() * 360);
+		const totalSegments = projects.length;
 		const selectedIndex = Math.floor(
-			(randomAngle % 360) / (360 / projects.length)
+			((angle + randomAngle) % 360) / (360 / totalSegments)
 		);
 
 		setSpinning(true);
@@ -93,7 +94,8 @@ export default function Wheel() {
 
 	return (
 		<div className={styles.wheelContainer}>
-			<div>
+			<div className={styles.iconContainer}>
+				<p>Spin the wheel!</p>
 				<FerrisWheel
 					onClick={() => setIsOpen(true)}
 					className={styles.icon}
@@ -102,13 +104,14 @@ export default function Wheel() {
 			{isOpen && (
 				<div className={styles.wheelOverlay}>
 					<div className={styles.wheelContent}>
-						{!firstSpinCompleted && (
-							<div
-								className={styles.wheel}
-								style={{
-									transform: `rotate(${angle}deg)`,
-									transition: `transform 4s ease-out`,
-									background: `conic-gradient(
+						<div className={styles.entireWheel}>
+							{!firstSpinCompleted && (
+								<div
+									className={styles.wheel}
+									style={{
+										transform: `rotate(${angle}deg)`,
+										transition: `transform 4s ease-out`,
+										background: `conic-gradient(
                     ${projects
 						.map(
 							(p, i) =>
@@ -117,11 +120,13 @@ export default function Wheel() {
 								}%`
 						)
 						.join(", ")})`
-								}}
-							/>
-						)}
-						<div className={styles.wheelPointer} />
-
+									}}
+								/>
+							)}
+							{!firstSpinCompleted && (
+								<div className={styles.wheelPointer} />
+							)}
+						</div>
 						{!firstSpinCompleted && (
 							<button
 								onClick={spinWheel}

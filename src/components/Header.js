@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "@/styles/Header.module.css";
 import { Sun, Moon } from "lucide-react";
-import Wheel from "@/components/Wheel";
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -88,7 +87,6 @@ export default function Header() {
 						<span className={styles.slider}></span>
 					</label>
 					<Moon className={styles.icon} />
-					<Wheel />
 				</div>
 				<div className={styles.hamburger} onClick={toggleNav}>
 					<Image
