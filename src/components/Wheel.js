@@ -126,6 +126,18 @@ export default function Wheel() {
 							{!firstSpinCompleted && (
 								<div className={styles.wheelPointer} />
 							)}
+							<button
+								className={styles.closebtn}
+								onClick={closeOverlay}
+							>
+								<Image
+									src="/assets/images/menu-close-icon.png"
+									className="png-invert"
+									width={33.58}
+									height={33.66}
+									alt="Close Icon"
+								/>
+							</button>
 						</div>
 						{!firstSpinCompleted && (
 							<button
