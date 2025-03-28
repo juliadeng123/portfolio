@@ -55,6 +55,20 @@ const projects = [
 export default function ButtonLink() {
 	const [isOpen, setIsOpen] = useState(false);
 	const [angle, setAngle] = useState(0);
+	const [spinning, setSpinning] = useState(false);
+
+	const spinWheel = () => {
+		const randomAngle = 1440 + Math.floor(Math.random() * 360);
+		const selectedIndex = Math.floor(
+			(randomAngle % 360) / (360 / projects.length)
+		);
+		setSpinning(true);
+		setAngle(randomAngle);
+		setTimeout(() => {
+			setSpinning(false);
+			setSelectedProject(projects[selectedIndex]);
+		}, 4000);
+	};
 
 	return (
 		<div className={styles.wheelContainer}>
@@ -77,6 +91,13 @@ export default function ButtonLink() {
                   )`
 						}}
 					/>
+					<button
+						onClick={spinWheel}
+						disabled={spinning}
+						className={styles.spinButton}
+					>
+						{spinning ? "Spinning..." : "Spin"}
+					</button>
 				</div>
 			)}
 		</div>
