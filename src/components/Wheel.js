@@ -77,9 +77,17 @@ export default function Wheel() {
 		}, 4000);
 	};
 
+	const spinAgain = () => {
+		setFirstSpinCompleted(false);
+		setTimeout(() => {
+			spinWheel();
+		}, 0);
+	};
+
 	const closeOverlay = () => {
 		setIsOpen(false);
 		setSelectedProject(null);
+		setFirstSpinCompleted(false);
 	};
 
 	return (
@@ -93,7 +101,7 @@ export default function Wheel() {
 			{isOpen && (
 				<div className={styles.wheelOverlay}>
 					<div className={styles.wheelContent}>
-						<div className={styles.wheelWrapper}>
+						{!firstSpinCompleted && (
 							<div
 								className={styles.wheel}
 								style={{
@@ -109,8 +117,9 @@ export default function Wheel() {
 						.join(", ")})`
 								}}
 							/>
-							<div className={styles.wheelPointer} />
-						</div>
+						)}
+						<div className={styles.wheelPointer} />
+
 						{!firstSpinCompleted && (
 							<button
 								onClick={spinWheel}
@@ -120,6 +129,7 @@ export default function Wheel() {
 								{spinning ? "Spinning..." : "Spin"}
 							</button>
 						)}
+
 						{firstSpinCompleted && selectedProject && (
 							<div className={styles.projectDetails}>
 								<img
@@ -136,7 +146,7 @@ export default function Wheel() {
 								/>
 								<div>
 									<button
-										onClick={spinWheel}
+										onClick={spinAgain}
 										disabled={spinning}
 										className={styles.spinButton}
 									>
