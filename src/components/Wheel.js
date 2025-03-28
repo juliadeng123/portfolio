@@ -63,12 +63,13 @@ export default function Wheel() {
 	const [firstSpinCompleted, setFirstSpinCompleted] = useState(false);
 
 	const spinWheel = () => {
-		const randomAngle = 1440 + Math.floor(Math.random() * 360);
+		const randomAngle = 1080 + Math.floor(Math.random() * 360);
 		const selectedIndex = Math.floor(
 			(randomAngle % 360) / (360 / projects.length)
 		);
+
 		setSpinning(true);
-		setAngle(randomAngle);
+		setAngle((prevAngle) => prevAngle + randomAngle);
 		setTimeout(() => {
 			setSpinning(false);
 			setSelectedProject(projects[selectedIndex]);
@@ -106,6 +107,7 @@ export default function Wheel() {
 								className={styles.wheel}
 								style={{
 									transform: `rotate(${angle}deg)`,
+									transition: `transform 4s ease-out`,
 									background: `conic-gradient(
                     ${projects
 						.map(
